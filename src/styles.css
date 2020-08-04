@@ -1,0 +1,188 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+#header {
+  background: #0d0d0c;
+  height: 14vh;
+  text-align: center;
+  margin-bottom: 2vh;
+  font-family: "Cubano";
+  letter-spacing: 2px;
+}
+#header a {
+  text-decoration: none !important;
+  font-size: 10vh;
+  color: white !important;
+}
+#containerInput {
+  position: absolute;
+  top: 14vh;
+  margin: 4vh 0;
+  left: -80vw;
+  width: 97vw;
+}
+#containerInput button {
+  margin-left: 2vh;
+}
+button a {
+  color: white !important;
+  text-decoration: none !important;
+}
+#loadingGif {
+  top: 29vh;
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#containerMovies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+}
+
+#containerDetailsPeli {
+  flex-direction: column;
+  text-align: center;
+  background: #27271c;
+  color: white;
+  margin-top: 15vh;
+  padding-bottom: 15vh;
+}
+
+#imgPreview {
+  height: 75%;
+  width: 90%;
+}
+#imgSwordVoice {
+  width: 10vh;
+}
+.containerPreviewMovie {
+  text-align: center;
+  width: 90vw;
+  height: 100vh;
+}
+.containerPreviewMovie a {
+  color: #25252b !important;
+}
+.containerPreviewMovie img {
+  height: 80%;
+  width: 100%;
+}
+.centradoPerfecto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-primary {
+  background-color: black !important;
+}
+.column {
+  flex-direction: column;
+  text-align: center;
+}
+.form-control {
+  width: 60% !important;
+}
+#footer {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: white;
+  text-align: center;
+}
+#footer > div {
+  padding-top: 10vh;
+  width: 100%;
+}
+#contenedorIconosContacto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#contenedorIconosContacto a {
+  font-size: 10vh;
+}
+#madeBy {
+  padding-bottom: 15vh;
+  text-align: center;
+}
+@keyframes showInput {
+  from {
+    left: -80vw;
+  }
+  to {
+    left: 0vw;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #containerDetailsPeli {
+    flex-direction: row;
+    text-align: start;
+  }
+  #detailsFoto {
+    text-align: center;
+    height: 100vh;
+    width: 25vw;
+    margin-right: 2vw;
+    margin-left: 10vw;
+  }
+  #detailsFoto img {
+    width: 100%;
+    height: 75%;
+  }
+  #detailsInformation {
+    padding-top: 5vh;
+    width: 65vw;
+  }
+  #footer {
+    display: flex;
+    flex-direction: row;
+    height: 45vh;
+    text-align: start;
+  }
+  #contact {
+    text-align: center;
+  }
+  #madeBy {
+    padding-bottom: 0;
+    text-align: center;
+  }
+  #footer > div {
+    padding-top: 0;
+    width: 30%;
+  }
+  .containerPreviewMovie {
+    width: 25vw;
+    margin-right: 1vh;
+  }
+  .form-control {
+    width: 45% !important;
+  }
+}
+@font-face {
+  font-family: "Cubano";
+  src: url("//db.onlinewebfonts.com/t/1d65b5646a9a805c62b037be6dd3a0a7.eot");
+  src: url("//db.onlinewebfonts.com/t/1d65b5646a9a805c62b037be6dd3a0a7.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/1d65b5646a9a805c62b037be6dd3a0a7.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/1d65b5646a9a805c62b037be6dd3a0a7.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/1d65b5646a9a805c62b037be6dd3a0a7.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/1d65b5646a9a805c62b037be6dd3a0a7.svg#Cubano")
+      format("svg");
+}
